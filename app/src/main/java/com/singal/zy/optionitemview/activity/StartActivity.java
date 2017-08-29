@@ -187,5 +187,12 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(new Intent(StartActivity.this,AutoGridActivity.class));
             }
         });
+
+        findViewById(R.id.btn_snapHelper).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,SnapHelperActivity.class));
+            }
+        });
     }
 }

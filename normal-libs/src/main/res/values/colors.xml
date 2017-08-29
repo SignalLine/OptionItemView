@@ -18,4 +18,6 @@
     <color name="clock_default_bg_color">#d0d9ff</color>
 
     <color name="select_color">#2e2e32</color>
+
+    <color name="line_DDDDDD">#DDDDDD</color>
 </resources>

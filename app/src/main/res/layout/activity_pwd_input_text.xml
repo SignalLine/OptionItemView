@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pwd_input_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.singal.zy.optionitemview.activity.PwdInputTextActivity">
+
+    <com.singal.zy.library.pswtext.PswInputText
+        android:layout_marginTop="10dp"
+        app:isDrawBorderImg="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.singal.zy.library.pswtext.PswInputText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.singal.zy.library.pswtext.PswInputText
+        android:layout_marginTop="10dp"
+        app:isShowTextPsw="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.singal.zy.library.pswtext.PswInputText
+        android:layout_marginTop="10dp"
+        app:darkPsw="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.singal.zy.library.pswtext.PswInputText
+        android:layout_marginTop="10dp"
+        app:clearTextPsw="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.singal.zy.optionitemview.activity.RecycleActivity">
+
+    <com.singal.zy.normal_libs.recycleview.YRecyclerView
+        android:id="@+id/rv"
+        app:rv_divider_color="#f00"
+        app:rv_divider_size="5dp"
+        app:rv_orientation="vertical"
+        app:rv_default_animator_open="true"
+        app:rv_type="grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

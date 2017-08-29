@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auto_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.singal.zy.optionitemview.activity.AutoGridActivity">
+
+    <com.singal.zy.library.view.AutoFlowLayout
+        android:id="@+id/afl_content1"
+        android:layout_weight="1"
+        app:columnNumbers="3"
+        app:rowNumbers="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_add"
+            android:text="添加"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/bt_delete"
+            android:text="删除"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.singal.zy.library.view.AutoFlowLayout
+        android:id="@+id/afl_content2"
+        android:layout_weight="1"
+        app:columnNumbers="3"
+        app:rowNumbers="3"
+        app:horizontalSpace="5dp"
+        app:verticalSpace="5dp"
+        app:cutLine="true"
+        app:cutLineWidth="1px"
+        app:cutLineColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

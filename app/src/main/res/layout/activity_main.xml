@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.singal.zy.optionitemview.activity.MainActivity">
+
+    <com.singal.zy.library.OptionItemView
+        android:id="@+id/optionItemView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/systemBar"
+        app:left_image_margin_left="15dp"
+        app:left_image_margin_right="15dp"
+        app:left_src="@mipmap/icon_back_32px"
+        app:left_text="left"
+        app:left_text_color="#000"
+        app:left_text_margin_left="10dp"
+        app:left_text_size="15sp"
+        app:right_image_margin_left="20dp"
+        app:right_image_margin_right="20dp"
+        app:right_src="@mipmap/task_2do"
+        app:right_text="right"
+        app:right_text_color="#f00"
+        app:right_text_margin_right="20dp"
+        app:right_text_size="16sp"
+        app:splite_mode="true"
+        app:title="title"
+        app:title_color="#fff"/>
+
+</RelativeLayout>

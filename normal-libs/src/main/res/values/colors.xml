@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_body">#cc22292c</color>
+    <color name="black">#000000</color>
+    <color name="status_bar">#303135</color>
+    <color name="top_bar">#9f556061</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray0">#464646</color>
+    <color name="line">#D2D2D2</color>
+    <color name="line2">#1896E5</color>
+    <!--快速索引bar颜色-->
+    <color name="side_bar">#919091</color>
+    <color name="side_bar_pressed">#BFBFBF</color>
+
+    <!--闹钟的默认背景图-->
+    <color name="clock_default_bg_color">#d0d9ff</color>
+
+    <color name="select_color">#2e2e32</color>
+</resources>

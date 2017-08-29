@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="systemBar">#74C5F4</color>
+    <color name="colorWhite">#f1eeef</color>
+
+
+    <!--webview-->
+    <color name="blue_color">#1B9AF7</color>
+    <color name="blue_color_light">#58b2f2</color>
+
+    <color name="colorPrimary_light_trsp" >#7b393a3f</color>
+
+    <!--gangedRecyclerView-->
+    <color name="gray_back">#f0f0f0</color>
+    <color name="white_back">#ffffff</color>
+    <color name="me_black">#1e1d1d</color>
+
+    <!--图表里面的颜色-->
+    <color name="chart_orange">#FFA500</color>
+    <color name="chart_green">#23BF70</color>
+    <color name="chart_blue">#7155EC</color>
+    <color name="chart_purple">#B09EFF</color>
+    <color name="chart_mblue">#00A2D0</color>
+    <color name="chart_turquoise">#41DBCB</color>
+
+</resources>

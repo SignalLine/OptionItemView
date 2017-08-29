@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--密码输入框-->
+    <declare-styleable name="PswText">
+        <!--密码长度-->
+        <attr name="pswLength" format="integer"/>
+        <!--密码框颜色-->
+        <attr name="borderColor" format="color"/>
+        <!--密码颜色-->
+        <attr name="pswColor" format="color"/>
+        <!--输入时密码框颜色-->
+        <attr name="inputBorder_color" format="color"/>
+        <!--输入时密码框阴影颜色-->
+        <attr name="borderShadow_color" format="color"/>
+        <!--明文密码文字大小-->
+        <attr name="psw_textSize" format="dimension"/>
+        <!--密码框圆角程度-->
+        <attr name="borderRadius" format="dimension"/>
+        <!--是否使用图片绘制密码框-->
+        <attr name="isDrawBorderImg" format="boolean"/>
+        <!--按back键时，是否需要绘制明文密码-->
+        <attr name="isShowTextPsw" format="boolean"/>
+        <!--输入密码时密码框是否有阴影-->
+        <attr name="isShowBorderShadow" format="boolean"/>
+        <!--密码框图片-->
+        <attr name="borderImg" format="reference"/>
+        <!--输入时变化的密码框图片-->
+        <attr name="inputBorderImg" format="reference"/>
+        <!--延迟绘制密码圆点的时间,1000 = 1s-->
+        <attr name="delayTime" format="integer"/>
+        <!--是否只绘制明文密码-->
+        <attr name="clearTextPsw" format="boolean"/>
+        <!--是否只绘制圆点-->
+        <attr name="darkPsw" format="boolean"/>
+    </declare-styleable>
+
+    <!--仿天气走势图-->
+    <declare-styleable name="MiuiWeatherView">
+        <attr name="line_interval" format="dimension"/>
+        <attr name="min_point_height" format="dimension"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+
+    <!--多功能自动流式布局 -->
+    <declare-styleable name="AutoFlowLayout">
+        <!--标签布局属性      是否单行显示-->
+        <attr name="singleLine" format="boolean"/>
+        <!--多行显示-->
+        <attr name="maxLines" format="integer"/>
+        <!--是否居中显示-->
+        <attr name="lineCenter" format="boolean"/>
+
+        <!--是否支持多选       共有属性-->
+        <attr name="multiChecked" format="boolean"/>
+
+        <!--网格布局     水平间距-->
+        <attr name="horizontalSpace" format="dimension"/>
+        <!--垂直间距-->
+        <attr name="verticalSpace" format="dimension"/>
+        <!--列数-->
+        <attr name="columnNumbers" format="integer"/>
+        <!--行数-->
+        <attr name="rowNumbers" format="integer"/>
+        <!--分割线宽度-->
+        <attr name="cutLineWidth" format="dimension"/>
+        <!--分割线颜色-->
+        <attr name="cutLineColor" format="color"/>
+        <!--是否支持分割线-->
+        <attr name="cutLine" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

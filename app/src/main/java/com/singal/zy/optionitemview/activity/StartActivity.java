@@ -201,5 +201,41 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(new Intent(StartActivity.this,AddressActivity.class));
             }
         });
+
+        findViewById(R.id.btn_banner).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,BannerActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_openOtherApp).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,OpenFileWithOtherApp.class));
+            }
+        });
+
+        findViewById(R.id.btn_superShapeView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,SuperShapeViewActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_switchMultiButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,SwitchMultiButtonActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_loadsir).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,LoadSirActivity.class));
+            }
+        });
+
     }
 }

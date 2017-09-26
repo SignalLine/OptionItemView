@@ -6,10 +6,16 @@ import com.apkfuns.jsbridge.JsBridgeConfig;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.singal.zy.library.loadsir.core.LoadSir;
 import com.singal.zy.normal_libs.emoji.LQRUIKit;
 import com.singal.zy.normal_libs.imagepicker.ImagePicker;
 import com.singal.zy.normal_libs.imagepicker.view.CropImageView;
 import com.singal.zy.optionitemview.R;
+import com.singal.zy.optionitemview.activity.loadsir.callback.CustomCallback;
+import com.singal.zy.optionitemview.activity.loadsir.callback.EmptyCallback;
+import com.singal.zy.optionitemview.activity.loadsir.callback.ErrorCallback;
+import com.singal.zy.optionitemview.activity.loadsir.callback.LoadingCallback;
+import com.singal.zy.optionitemview.activity.loadsir.callback.TimeoutCallback;
 import com.singal.zy.optionitemview.manager.UIImageLoader;
 import com.singal.zy.optionitemview.model.js.MultiLayerModule;
 import com.singal.zy.optionitemview.model.js.MultiLayerModule2;
@@ -54,6 +60,17 @@ public class App extends Application {
                 ServiceModule.class, StaticModule.class, NativeModule.class,
                 MultiLayerModule.class, MultiLayerModule2.class, MultiLayerModule3.class
         ).debugMode(true);
+
+
+        //loadSir
+        LoadSir.beginBuilder()
+                .addCallback(new ErrorCallback())
+                .addCallback(new EmptyCallback())
+                .addCallback(new LoadingCallback())
+                .addCallback(new TimeoutCallback())
+                .addCallback(new CustomCallback())
+                .setDefaultCallback(LoadingCallback.class)
+                .commit();
     }
 
     public static App getInstance() {

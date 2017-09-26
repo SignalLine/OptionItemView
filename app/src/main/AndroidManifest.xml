@@ -10,6 +10,19 @@
     <!-- gps -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 录制视频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
 
     <application
         android:name=".app.App"
@@ -97,6 +110,30 @@
         <activity android:name=".activity.SnapHelperActivity">
         </activity>
         <activity android:name=".activity.AddressActivity">
+        </activity>
+        <activity android:name=".activity.BannerActivity">
+        </activity>
+        <activity android:name=".activity.OpenFileWithOtherApp">
+        </activity>
+        <activity android:name=".activity.SuperShapeViewActivity">
+        </activity>
+        <activity android:name=".activity.SwitchMultiButtonActivity">
+        </activity>
+        <activity android:name=".activity.LoadSirActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.NormalActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.ConvertorActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.FragmentSingleActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.ViewTargetActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.MultiFragmentWithViewPagerActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.MultiFragmentActivity">
+        </activity>
+        <activity android:name=".activity.loadsir.PlaceholderActivity">
         </activity>
     </application>
 

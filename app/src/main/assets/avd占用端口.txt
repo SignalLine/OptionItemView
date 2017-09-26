@@ -1,0 +1,32 @@
+运行android程序控制台输出
+[2013-06-25 11:10:32 - MyWellnessTracker] The connection to adb is down, and a severe error has occured.
+[2013-06-25 11:10:32 - MyWellnessTracker] You must restart adb and Eclipse.
+[2013-06-25 11:10:32 - MyWellnessTracker] Please ensure that adb is correctly located at 'E:\SDK\platform-tools\adb.exe' and can be executed.
+
+
+有很多种情况，所以也有很多解决方法：
+
+1、任务管理器 kill掉adb 或者重启adb server
+
+
+2、查看任务管理器没有adb，猜测是某个程序占用了adb端口
+5037为adb默认端口 查看该端口情况如下：
+
+查看：cmd —— netstat -ano|findstr "5037"
+
+ 
+TCP    127.0.0.1:5037         0.0.0.0:0             LISTENING       5408
+ 
+TCP    127.0.0.1:5037         127.0.0.1:49542        ESTABLISHED    5408
+
+
+发现5408占用了 5037端口
+直接在任务管理器里面kill掉
+
+1)、tasklist 可以找到任务管理器所有进程
+    
+2)、taskkilll /f /im 程序名1.exe /f /im 程序名2.exe .... 可以kill掉多个程序
+
+3、重新开启adb
+adb kill-server 
+adb start-server

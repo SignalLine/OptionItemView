@@ -19,4 +19,9 @@
         <item>14</item>
     </string-array>
 
+    <string-array name="switch_tabs">
+        <item>凤姐</item>
+        <item>芙蓉姐姐</item>
+    </string-array>
+
 </resources>

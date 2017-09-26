@@ -71,4 +71,53 @@
 
     </declare-styleable>
 
+    <!--轮播图-->
+    <declare-styleable name="BannerLayout">
+        <!--轮播图点的大小-->
+        <attr name="bannerPointSize" format="dimension" />
+        <!--轮播图点的位置，分别有左中右-->
+        <attr name="bannerPointGravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+        <!--轮播图点选中的图片-->
+        <attr name="bannerPointDrawableSelected" format="reference" />
+        <!--轮播图点未选中的图片-->
+        <attr name="bannerPointDrawableUnselected" format="reference" />
+        <!--轮播图循环时间，单位秒-->
+        <attr name="bannerDelaySecond" format="integer" />
+    </declare-styleable>
+
+    <!--自带边框图形自定义view-->
+    <declare-styleable name="SuperShapeView">
+
+        <attr name="super_cornerRadius" format="dimension"/>
+        <attr name="super_strokeWidth" format="dimension"/>
+
+        <attr name="super_strokeColor" format="color|reference"/>
+        <attr name="super_solidColor" format="color|reference"/>
+
+        <attr name="super_dashWidth" format="dimension"/>
+        <attr name="super_dashGap" format="dimension"/>
+
+        <attr name="super_topLeftRadius" format="dimension"/>
+        <attr name="super_topRightRadius" format="dimension"/>
+        <attr name="super_bottomLeftRadius" format="dimension"/>
+        <attr name="super_bottomRightRadius" format="dimension"/>
+
+    </declare-styleable>
+
+    <!--自定义多选按钮-->
+    <declare-styleable name="SwitchMultiButton">
+
+        <attr name="strokeRadius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="selectedTab" format="integer"/>
+        <attr name="selectedColor" format="color|reference"/>
+        <attr name="switchTabs" format="reference"/>
+
+    </declare-styleable>
+
 </resources>

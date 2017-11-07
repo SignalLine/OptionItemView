@@ -83,6 +83,8 @@ public class VideoRecordActivity extends AppCompatActivity implements YVideoReco
                             mRp.setProgressColor(Color.parseColor("#1AAD19"));
                         }
                         break;
+                    default:
+                        break;
                 }
                 return true;
             }

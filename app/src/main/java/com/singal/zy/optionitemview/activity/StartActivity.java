@@ -237,5 +237,12 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_tickView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this,TickViewActivity.class));
+            }
+        });
+
     }
 }

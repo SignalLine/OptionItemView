@@ -18,6 +18,9 @@ public class DensityUtils {
      * @return
      */
     public static int dp2px(Context context, float dpVal) {
+        if(context == null){
+            return (int) (dpVal * 1.5f + 0.5f);
+        }
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpVal, context.getResources()
                 .getDisplayMetrics());
     }
@@ -29,8 +32,6 @@ public class DensityUtils {
      * @return
      */
     public static int sp2px(Context context, float spVal) {
-//        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spVal, context.getResources()
-//                .getDisplayMetrics());
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spVal * fontScale + 0.5f);
     }

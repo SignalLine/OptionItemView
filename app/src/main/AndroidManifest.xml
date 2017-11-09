@@ -135,6 +135,8 @@
         </activity>
         <activity android:name=".activity.loadsir.PlaceholderActivity">
         </activity>
+        <activity android:name=".activity.TickViewActivity">
+        </activity>
     </application>
 
 </manifest>

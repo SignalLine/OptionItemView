@@ -29,6 +29,7 @@ import tv.danmaku.ijk.media.player.IjkMediaPlayer;
  * Created by li on 2017/6/7.
  *
  * http://www.jianshu.com/p/420f7b14d6f6
+ * @author li
  */
 
 public class UVideoPlayer extends FrameLayout implements UVideoPlayerControl, TextureView.SurfaceTextureListener {
@@ -248,7 +249,9 @@ public class UVideoPlayer extends FrameLayout implements UVideoPlayerControl, Te
      */
     @Override
     public void enterFullScreen() {
-        if (mPlayerState == PLAYER_FULL_SCREEN) return;
+        if (mPlayerState == PLAYER_FULL_SCREEN){
+            return;
+        }
 
         // 隐藏ActionBar、状态栏，并横屏
         PlayerUtil.hideActionBar(mContext);
@@ -301,7 +304,9 @@ public class UVideoPlayer extends FrameLayout implements UVideoPlayerControl, Te
      */
     @Override
     public void enterTinyWindow() {
-        if (mPlayerState == PLAYER_TINY_WINDOW) return;
+        if (mPlayerState == PLAYER_TINY_WINDOW){
+            return;
+        }
         this.removeView(mContainer);
 
         ViewGroup contentView = (ViewGroup) PlayerUtil.scanForActivity(mContext)
